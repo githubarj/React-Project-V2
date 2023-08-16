@@ -1,0 +1,40 @@
+.container {
+  background: #282d35;
+  height: 460px;
+}
+
+.title {
+  padding: 0px 26px;
+}
+
+.title h1 {
+  padding-top: 57px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 39.06px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.953px;
+}
+
+ul {
+  padding: 46px 26px 0px 76px;
+}
+
+li {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+  z-index: 3;
+}
+
+.bigIcon {
+    z-index: 1;
+    float: right;
+    margin-top: -350px;  
+}
