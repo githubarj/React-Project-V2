@@ -5,9 +5,16 @@
   font-family: "Inter";
 }
 
-div {
+.app {
   width: 550px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.light-app{
+  gap: 4px;
 }
 
 html {

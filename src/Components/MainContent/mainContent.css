@@ -34,7 +34,16 @@ li {
 }
 
 .bigIcon {
-    z-index: 1;
-    float: right;
-    margin-top: -350px;  
+  z-index: 1;
+  float: right;
+  margin-top: -350px;
+}
+
+.light {
+  background: #fff !important;
+}
+
+.light-text h1,
+.light-text li {
+  color: #2b283a;
 }

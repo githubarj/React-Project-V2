@@ -1,16 +1,19 @@
-import { useState } from 'react'
 
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import MainContent from './Components/MainContent/MainContent'
+import { useState } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [mode, setMode] = useState(false);
+  function toggle() {
+    setMode((prev) => !prev);
+  }
 
   return (
-    <div>
-      <Navbar />
-      <MainContent />
+    <div className={`app ${mode && "light-app"}`} >
+      <Navbar  handleClick = {toggle} mode={mode}/>
+      <MainContent mode ={mode}  />
     </div>
   )
 }

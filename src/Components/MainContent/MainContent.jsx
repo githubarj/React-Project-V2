@@ -1,15 +1,17 @@
 import "./mainContent.css";
 import reactIcon2 from "../../assets/reactjs-icon 2.png";
+import lightIcon from "../../assets/light.png"
+import PropTypes from "prop-types";
 
-function MainContent() {
+function MainContent({ mode }) {
   return (
     <div className="div1">
-      <div className="container">
-        <div className="title">
+      <div className={`container ${mode && "light"} `}>
+        <div className={`title ${mode && "light-text"}`}>
           <h1>Fun facts about React</h1>
         </div>
 
-        <div className="list">
+        <div className={`list ${mode && "light-text"}`}>
           <ul>
             <li>Was first released in 2013</li>
             <li>Was originally created by Jordan Walke</li>
@@ -20,9 +22,13 @@ function MainContent() {
         </div>
       </div>
 
-      <img src={reactIcon2} alt="" className="bigIcon" />
+      <img src={mode ? lightIcon : reactIcon2} alt="" className="bigIcon" />
     </div>
   );
 }
+
+MainContent.propTypes = {
+  mode: PropTypes.bool,
+};
 
 export default MainContent;
